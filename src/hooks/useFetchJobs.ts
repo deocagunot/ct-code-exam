@@ -8,7 +8,9 @@ const useFetchJobs = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await fetch("/data.json");
+        const response = await fetch(
+          "https://deocagunot.github.io/ct-code-exam/data.json"
+        );
         const data = await response.json();
         setJobs(data);
       } catch (error) {
