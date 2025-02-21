@@ -13,7 +13,7 @@ const JobCard: React.FC<JobCardProps> = ({ job, addFilter }) => {
       } relative`}
     >
       <img
-        src={job.logo}
+        src={`https://deocagunot.github.io/ct-code-exam${job.logo}`}
         alt={job.company}
         className="w-16 h-16 object-contain absolute sm:static top-[-33px] sm:top-0"
       />
